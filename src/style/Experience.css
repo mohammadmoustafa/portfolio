@@ -1,0 +1,47 @@
+.ExperienceSection {
+	width: 100%;
+	display: flex;
+	flex-flow: column;
+}
+
+.Experience {
+	display: flex;
+	flex-flow: column;
+	width: 98%;
+	align-self: center;
+	
+}
+
+.Experience .desc {
+	font-size: 20px;
+}
+
+.Experience  .info {
+	display: flex;
+	justify-content: space-between;
+	font-size: calc(6px + 2vmin);;
+}
+
+.Experience .info .title {
+	font-style: italic;
+}
+
+.Experience .company {
+	display: flex;
+	justify-content: space-between;
+	font-size: calc(10px + 2vmin);
+}
+
+.Experience .company .name {
+	font-weight: bold;
+}
+
+.Experience .company .location {
+	font-size: calc(6px + 2vmin);
+}
+
+.Experience .info .title {
+}
+
+.Experience .info .date {
+}
