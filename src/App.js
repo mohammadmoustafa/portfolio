@@ -9,6 +9,7 @@ function App() {
   return (
     <div className="App">
     	<MenuBar />
+    	<div className="hint">Pssst....<br/>refresh the page!</div>
     	<AppWindow title="Experience"/>
     </div>
   );

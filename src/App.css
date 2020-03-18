@@ -8,3 +8,11 @@
   overflow: hidden;
 }
 
+.hint {
+	z-index: 0;
+	color: #004200;
+	top: 45vh;
+	position: absolute;
+	text-align: center;
+}
+

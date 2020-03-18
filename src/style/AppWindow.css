@@ -11,6 +11,7 @@
 	display:flex;
 	flex-flow: column;
 	margin-top: 3%;
+	z-index: 1;
 }
 
 .AppWindow-min {
