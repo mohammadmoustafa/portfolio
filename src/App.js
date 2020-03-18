@@ -11,7 +11,7 @@ import AppWindow from './components/AppWindow';
 function App() {
   return (
     <div className="App">
-      <AppWindow />
+      <AppWindow title="Experience"/>
     </div>
   );
 }
