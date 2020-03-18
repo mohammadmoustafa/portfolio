@@ -1,17 +1,15 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
-import Education from './components/Education';
-import ExperienceSection from './components/ExperienceSection';
 import AppWindow from './components/AppWindow';
+import MenuBar from './components/MenuBar';
 
-// <Education school="University of Toronto" gradYear="2020" program="Computer Science" />
-// <img src={logo} className="App-logo" alt="logo" />
+import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <AppWindow title="Experience"/>
+    	<MenuBar />
+    	<AppWindow title="Experience"/>
     </div>
   );
 }

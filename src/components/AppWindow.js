@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import ReactTooltip from 'react-tooltip';
 
 import { 
-	faExpandAlt,
 	faMinus,
 	faTimes,
 	faCaretDown,
@@ -10,11 +10,7 @@ import {
 	faCircle
 } from '@fortawesome/free-solid-svg-icons'
 
-import { 
-	faWindowMinimize,
-} from '@fortawesome/free-regular-svg-icons'
 
-import { faApple } from '@fortawesome/free-brands-svg-icons'
 import '../style/AppWindow.css';
 import ExperienceSection from './ExperienceSection';
 
@@ -32,12 +28,13 @@ class TitleBar extends Component {
 			<div className="TitleBar">
 				<span className="fa-layers fa-fw" onClick={this.props.windowClose}>
 					<FontAwesomeIcon icon={faCircle} style={{ color: `rgb(252, 91, 87)` }} />
-					<FontAwesomeIcon icon={faTimes} transform="shrink-7" />
+					<FontAwesomeIcon icon={faTimes} transform="shrink-5" />
 				</span>
 				<span className="fa-layers fa-fw" onClick={this.props.windowMin}>
 					<FontAwesomeIcon icon={faCircle} style={{ color: `rgb(229, 191, 60)` }} />
 					<FontAwesomeIcon icon={faMinus} transform="shrink-7" />
 				</span>
+				
 				<span className="fa-layers fa-fw" onClick={this.props.windowMax}>
 					<FontAwesomeIcon icon={faCircle} style={{ color: `rgb(87, 192, 56)` }} />
 					<FontAwesomeIcon icon={faCaretDown} transform="shrink-5 down-2 left-2 rotate-45"/>

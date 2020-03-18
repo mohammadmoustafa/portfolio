@@ -1,0 +1,16 @@
+.MenuBar {
+	width: 100%;
+	background-color: rgb(210, 213, 230);
+	display: flex;
+	padding: 0.25% 0% 0.25% 1%;
+}
+
+.MenuBar .MenuOption {
+	font-size: calc(6px + 2vmin);
+	padding: 0.15% 1% 0 1%;
+	color: black;
+}
+
+.MenuBar .MenuOption:hover {
+	background-color: blue;
+}

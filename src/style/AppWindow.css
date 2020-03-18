@@ -10,6 +10,7 @@
 	overflow: hidden;
 	display:flex;
 	flex-flow: column;
+	margin-top: 3%;
 }
 
 .AppWindow-min {
