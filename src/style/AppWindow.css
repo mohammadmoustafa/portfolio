@@ -29,6 +29,7 @@
 	overflow: hidden;
 	display:flex;
 	flex-flow: column;
+	z-index: 1;
 }
 
 .AppWindow .content {

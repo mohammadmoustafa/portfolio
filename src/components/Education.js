@@ -6,6 +6,7 @@ class Education extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
+			visible: true,
 			school: props.school,
 			program: props.program,
 			gradYear: props.gradYear,
@@ -14,13 +15,13 @@ class Education extends React.Component {
 
 	render() {
 		return (
-			<div className="Education">
-				<div className="school">{this.state.school}</div>
-				<div className="info">
-					<p className="program">{this.state.program}</p>
-					<p className="gradYear">{this.state.gradYear}</p>
-				</div>
-			</div>
+			<div className="ExperienceSection">
+				{ this.state.visible &&
+				<React.Fragment>
+					<h1>Education!</h1>
+		        </React.Fragment>
+		    }
+	        </div>
 		);
 	}
 }

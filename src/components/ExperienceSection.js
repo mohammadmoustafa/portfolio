@@ -9,8 +9,6 @@ class ExperienceSection extends React.Component {
 		this.state = { visible: true };
 	}
 
-	// <div className="section-header">Experience</div>
-
 	render() {
 		return (
 			<div className="ExperienceSection">

@@ -3,16 +3,17 @@ import logo from './logo.svg';
 import AppWindow from './components/AppWindow';
 import MenuBar from './components/MenuBar';
 
+import { Switch, Route, withRouter } from 'react-router-dom';
+
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-    	<MenuBar />
-    	<div className="hint">Pssst....<br/>refresh the page!</div>
-    	<AppWindow title="Experience"/>
+		<MenuBar />
+		<AppWindow />
     </div>
   );
 }
 
-export default App;
+export default withRouter(App);
