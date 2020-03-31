@@ -1,5 +1,4 @@
 import React from 'react';
-import Experience from './Experience';
 import '../style/Experience.css';
 
 class Projects extends React.Component {

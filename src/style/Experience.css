@@ -13,13 +13,13 @@
 }
 
 .Experience .desc {
-	font-size: 20px;
+	font-size: calc(14px + (20 - 14) * ((100vw - 300px) / (1600 - 300)));
 }
 
 .Experience  .info {
 	display: flex;
 	justify-content: space-between;
-	font-size: calc(6px + 2vmin);
+	font-size: calc(14px + (22 - 14) * ((100vw - 300px) / (1600 - 300)));
 }
 
 .Experience .info .title {
@@ -29,7 +29,7 @@
 .Experience .company {
 	display: flex;
 	justify-content: space-between;
-	font-size: calc(10px + 2vmin);
+	font-size: calc(14px + (28 - 14) * ((100vw - 300px) / (1600 - 300)));
 }
 
 .Experience .company .name {
@@ -37,7 +37,7 @@
 }
 
 .Experience .company .location {
-	font-size: calc(6px + 2vmin);
+	font-size: calc(14px + (22 - 14) * ((100vw - 300px) / (1600 - 300)));
 }
 
 .Experience .info .title {

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import ReactTooltip from 'react-tooltip';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { 
 	faMinus,
@@ -8,7 +7,7 @@ import {
 	faCaretDown,
 	faCaretUp,
 	faCircle
-} from '@fortawesome/free-solid-svg-icons'
+} from '@fortawesome/free-solid-svg-icons';
 
 import { Switch, Route } from 'react-router-dom';
 
@@ -18,6 +17,7 @@ import ExperienceSection from './ExperienceSection';
 import Education from './Education';
 import Projects from './Projects';
 import Contact from './Contact';
+import Publication from './Publication';
 
 class TitleBar extends Component {
 
@@ -72,6 +72,7 @@ class AppWindow extends Component {
 
 	constructor(props) {
 		super(props);
+
 		this.state = {
 			class: "AppWindow",
 			visible: true,
@@ -90,7 +91,7 @@ class AppWindow extends Component {
 	}
 
 	maximize = () => {
-		if (this.state.class == "AppWindow") {
+		if (this.state.class === "AppWindow") {
 			this.setState({ class: "AppWindow-max" });
 		} else {
 			this.setState({ class: "AppWindow" });
@@ -115,7 +116,61 @@ class AppWindow extends Component {
 								</Route>
 								<Route path="/experience" component={ ExperienceSection } />
 								<Route path="/education">
-									<Education school="University of Toronto" gradYear="2020" program="Computer Science" />
+									
+									<Education school="University of Toronto"
+														 degree="Bachelor of Science"
+														 gradMonth={7}
+														 gradYear="2020"
+														 program="Computer Science">
+															 <div className="column" id="publications">
+																 <div className="heading bold">Publications</div>
+																	<Publication authors={['Brian Harrington', 'Jingyiran Li', 'Mohamed Moustafa', 'Marzieh Ahmadzadeh', 'Nick Cheng']}
+																							 title="On the Effect of Question Ordering on Performance and Confidence in Computer Science Examinations."
+																							 year="2019"
+																							 publication="In Proceedings of the 50th ACM Technical Symposium on Computer Science Education (SIGCSE ’19)."
+																							 publisher="Association for Computing Machinery, New York, NY, USA, 620–626."
+																							 url="https://doi.org/10.1145/3287324.3287398" />
+																</div>
+															 <div className="row">
+																<div className="column" id="courses">
+																	<div className="heading bold">Courses</div>
+																	<div className="heading-2 semi-bold italic">Software Engineering</div>
+																	<ul className="text">
+																		<li>Software Design</li>
+																		<li>Introduction to Software Engineering</li>
+																		<li>Programming on the Web</li>
+																		<li>Engineering Large Software Systems</li>
+																	</ul>
+																	<div className="heading-2 semi-bold italic">Advanced Topics</div>
+																	<ul className="text">
+																		<li>Compiler Optimization</li>
+																		<li>Computer Graphics</li>
+																	</ul>
+																	<div className="heading-2 semi-bold italic">Core CS Topics</div>
+																	<ul className="text">
+																		<li>Algorithm Design and Analysis</li>
+																		<li>Operating Systems</li>
+																		<li>Introduction to Databases</li>
+																		<li>Design and Analysis of Data Structures</li>
+																	</ul>
+																</div>
+																 <div className="column" id="committees">
+																	<div className="heading bold">Committees</div>
+																 	<div className="heading-2 semi-bold italic">Instructional Center 2<br />Project Planning Committee</div>
+																	<div className="text">Student representative on the planning committee for a instructional 
+																	building that will house the Computer Science, Mathematics, and Statistics department, as well as
+																	classrooms and lecture halls for over 2000 students.</div>
+																 </div>
+																 <div className="column" id="clubs">
+																 <div className="heading bold">Clubs</div>
+																 <ul>
+																 	<li className="text">Association of Mathematical and Computer Science Students</li>
+																	<li className="text">Drama Society</li>
+																	<li className="text">Model United Nations</li>
+																</ul>
+																 </div>
+															 </div>
+									</Education>
 								</Route>
 								<Route path="/projects" component={ Projects } />
 								<Route path="/contact" component={ Contact } />

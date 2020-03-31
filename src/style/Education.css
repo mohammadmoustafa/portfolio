@@ -1,19 +1,67 @@
 .Education {
 	display: flex;
+	flex-flow: column;
+	width: 98%;
+	align-self: center;
 }
 
-.Education .school {
+.school {
+	display: flex;
+	justify-content: space-between;
+	font-weight: bold;
+	font-size: calc(14px + (28 - 14) * ((100vw - 300px) / (1600 - 300)));
 }
 
-.Education .info {
+.Education  .info {
+	display: flex;
+	justify-content: space-between;
+	font-size: calc(14px + (22 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.row {
+	display: flex;
+	width: 100%;
+}
+
+.column {
 	display: flex;
 	flex-flow: column;
 }
 
-.Education .info .program {
-
+#courses, #committees, #clubs {
+	width: 33%;
 }
 
-.Education .info .gradYear {
-	
+.column ul {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.heading {
+	font-size: calc(14px + (24 - 14) * ((100vw - 300px) / (1600 - 300)));
+	margin-top: 15px;
+}
+
+.heading-2 {
+	font-size: calc(14px + (22 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.heading-3 {
+	font-size: calc(14px + (20 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.text {
+	font-size: calc(14px + (20 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.italic {
+	font-style: italic;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.semi-bold {
+	font-weight: 600;
 }

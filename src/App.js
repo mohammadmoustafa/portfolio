@@ -1,9 +1,8 @@
 import React from 'react';
-import logo from './logo.svg';
 import AppWindow from './components/AppWindow';
 import MenuBar from './components/MenuBar';
 
-import { Switch, Route, withRouter } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 
 import './App.css';
 

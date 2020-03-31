@@ -1,12 +1,8 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faReact } from '@fortawesome/free-brands-svg-icons';
 import ReactTooltip from 'react-tooltip';
-import { 
-	Link,
-	BrowserRouter as Router,
-	useRouteMatch,
-} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import '../style/MenuBar.css';
 

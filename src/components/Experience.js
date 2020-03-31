@@ -12,12 +12,6 @@ class Experience extends React.Component {
 			start: props.start,
 			end: props.end,
 		}
-		this.handleClick = this.handleClick.bind(this);
-	}
-
-	handleClick(e) {
-		e.preventDefault();
-		alert(`You clicked me [${this.state.title}]!`);
 	}
 
 	render() {
@@ -28,7 +22,7 @@ class Experience extends React.Component {
 						<div className="location">{this.state.location}</div>
 					</div>
 					<div className="info">
-						<div className="title" onClick={this.handleClick}>{this.state.title}</div>
+						<div className="title">{this.state.title}</div>
 						<div className="date">{this.state.start} &mdash; {this.state.end}</div>
 					</div>
 					<div className="desc">{this.props.children}</div>
