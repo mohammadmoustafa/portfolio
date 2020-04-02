@@ -26,6 +26,7 @@ export default function MenuBar() {
 					<div className="MenuOption"><Link to='/experience'>Experience</Link></div>
 					<div className="MenuOption"><Link to='/projects'>Projects</Link></div>
 					<div className="MenuOption"><Link to='/contact'>Contact Info</Link></div>
+					<div className="MenuOption"><Link to=''>Icons8</Link></div>
 					<ReactTooltip />
 			</div>
 		);

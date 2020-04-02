@@ -1,0 +1,21 @@
+.Projects {
+	display: flex;
+	flex-flow: column;
+	width: 98%;
+	align-self: center;
+}
+
+.Project {
+  width: 100%;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid grey;
+}
+
+/* .row, .column {
+  border: 1px solid black;
+} */
+
+/* #metadata {
+  justify-content: space-between;
+} */
