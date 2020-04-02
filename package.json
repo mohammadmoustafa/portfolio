@@ -2,7 +2,7 @@
   "name": "react-gh",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://mohammadmoustafa.github.io/react-gh",
+  "homepage": "http://mohammadmoustafa.github.io/portfolio",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.27",
     "@fortawesome/free-brands-svg-icons": "^5.12.1",
