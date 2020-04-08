@@ -59,7 +59,7 @@ class TitleBar extends Component {
 						<div className="title">Projects</div>
 					</Route>
 					<Route path="/contact">
-						<div className="title">Contact Info</div>
+						<div className="title">Contact Info - Currently Seeking Full Time Positions!</div>
 					</Route>
 				</Switch>
 				
