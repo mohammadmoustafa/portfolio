@@ -20,56 +20,56 @@ function Project(props) {
 		javascript: <JavaScript width="36px" height="36px" className="icon"
 														data-tip="JavaScript"
 														data-for={props.title}
-														data-place="top"
+														data-place="bottom"
 														data-effect="solid"
-														data-type="light" />,
+														data-type="info" />,
 		java: <Java width="36px" height="36px" className="icon"
 								data-tip="Java"
 								data-for={props.title}
-								data-place="top"
+								data-place="bottom"
 								data-effect="solid"
-								data-type="light" />,
+								data-type="info" />,
 		c: <C width="36px" height="36px" className="icon"
 					data-tip="C"
 					data-for={props.title}
-					data-place="top"
+					data-place="bottom"
 					data-effect="solid"
-					data-type="light" />,
+					data-type="info" />,
 		python: <Python width="36px" height="36px" className="icon"
 										data-tip="Python"
 										data-for={props.title}
-										data-place="top"
+										data-place="bottom"
 										data-effect="solid"
-										data-type="light" />,
+										data-type="info" />,
 		nodejs: <NodeJS width="36px" height="36px" className="icon"
 										data-tip="NodeJS"
 										data-for={props.title}
-										data-place="top"
+										data-place="bottom"
 										data-effect="solid"
-										data-type="light" />,
+										data-type="info" />,
 		react: <ReactLogo width="36px" height="36px" className="icon"
 											data-tip="React"
 											data-for={props.title}
-											data-place="top"
+											data-place="bottom"
 											data-effect="solid"
-											data-type="light" />,
+											data-type="info" />,
 		redis: <Redis width="36px" height="36px" className="icon"
 											data-tip="Redis"
 											data-for={props.title}
-											data-place="top"
+											data-place="bottom"
 											data-effect="solid"
-											data-type="light" />,
+											data-type="info" />,
 		materialui: <MaterialUI width="36px" height="36px" className="icon"
 													data-tip="Material UI"
 													data-for={props.title}
-													data-place="top"
+													data-place="bottom"
 													data-effect="solid"
-													data-type="light" />,
+													data-type="info" />,
 	}
 
 	return (
 		<div className="Project">
-			<div className="row"><img className="screenshot" src={ (props.image) ? props.image : "https://via.placeholder.com/512"} /></div>
+			<div className="row"><img alt="screenshot of project" className="screenshot" src={ (props.image) ? props.image : "https://via.placeholder.com/512"} /></div>
 			<div className="row" id="metadata">
 				<div className="column heading-1 semi-bold" style={{ justifyContent: 'center'}}>
 					{props.title}
@@ -104,11 +104,14 @@ class Projects extends React.Component {
 				<React.Fragment>
 					<div className="Projects">
 						<Project  title="TrendMap" stack={['javascript', 'react', 'nodejs', 'materialui', 'redis']} image={process.env.PUBLIC_URL + '/trendmap.png'}>
-
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut dignissim dui, eget ullamcorper odio. Ut rutrum efficitur purus, et cursus arcu porta ut. Pellentesque varius sollicitudin rutrum. Nam bibendum elit sit amet velit dapibus, eu accumsan magna efficitur. Sed risus ante, rhoncus eu semper a, luctus eu enim. Donec eget velit mauris. Duis ac condimentum ligula. Cras aliquet finibus arcu, et auctor neque pretium ornare. Donec non dolor id quam cursus ornare. Nullam molestie vestibulum egestas.
-
-Aliquam aliquam arcu id auctor iaculis. Fusce a justo ac metus dictum rhoncus. Duis sed fermentum dui. Quisque accumsan luctus ex, non vestibulum mauris lobortis id. Nullam tempor iaculis justo, ac facilisis arcu auctor vel. Proin pellentesque congue felis maximus gravida. Vestibulum vehicula vitae lorem a fringilla. 
+							<div className="text">
+								TrendMap is a single-page web application developed for my web programming course during the COVID-19 pandemic. 
+								It is an interactive map that allows users to see the top news stories and Reddit posts by country. 
+								Users can select a country from the map and be able to see two tabs of posts - one for news stories, and one for Reddit posts - on the screen. 
+								The application uses <span className="highlight">React</span>, <span className="highlight">Material UI</span>, and <span className="highlight">LeafletJS</span> for the front end, and connects to the backend using <span className="highlight">SocketIO</span>. 
+								The backend is written in <span className="highlight">NodeJS</span> and uses <span className="highlight">Redis</span> for caching data, which is scraped using the <span className="highlight">News</span> and <span className="highlight">Reddit</span> APIs. 
+								The data is updated hourly, so users are always seeing the most recent stories.
+							</div>
 						</Project>
 					</div>
 				</React.Fragment>
