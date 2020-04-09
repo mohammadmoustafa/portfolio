@@ -38,6 +38,7 @@ class Contact extends React.Component {
 						{ this.state.verified && 
 						<React.Fragment>
 							<div className="row heading bold center">Mohamed Moustafa</div>
+							<div className="row heading-2 center">Currently seeking full time positions</div>
 							<div className="row center" id="email"><a className="email" href={`mailto:mh.moustafa98@gmail.com`}>mh.moustafa98 [ at ] gmail.com</a></div>
 							<div className="row center">
 								<a href="https://www.github.com/mohammadmoustafa" target="_blank" rel="noopener noreferrer">
