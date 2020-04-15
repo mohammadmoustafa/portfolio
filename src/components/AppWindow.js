@@ -46,9 +46,6 @@ class TitleBar extends Component {
 					<FontAwesomeIcon icon={faCaretUp} transform="shrink-5 up-2 right-2 rotate-45"/>
 				</span>
 				<Switch>
-					<Route exact path="/">
-						<div className="title"></div>
-					</Route>
 					<Route path="/education">
 						<div className="title">Education</div>
 					</Route>
@@ -70,44 +67,15 @@ class TitleBar extends Component {
 
 class AppWindow extends Component {
 
-	constructor(props) {
-		super(props);
-
-		this.state = {
-			class: "AppWindow",
-			visible: true,
-		}
-		this.close = this.close.bind(this);
-		this.minimize = this.minimize.bind(this);
-		this.maximize = this.maximize.bind(this);
-	}
-
-	close = () => {
-		this.setState({ visible: false });
-	}
-
-	minimize = () => {
-		this.setState({ class: "AppWindow-min" });
-	}
-
-	maximize = () => {
-		if (this.state.class === "AppWindow") {
-			this.setState({ class: "AppWindow-max" });
-		} else {
-			this.setState({ class: "AppWindow" });
-		}
-		
-	}
-
 	render() {
 		return (
 			<React.Fragment>
-				{ this.state.visible &&
+				{ this.props.visible &&
 				<React.Fragment>
-					<div className={this.state.class}>
-						<TitleBar windowClose={this.close}
-								  windowMin={this.minimize}
-								  windowMax={this.maximize}
+					<div className={this.props.class}>
+						<TitleBar windowClose={this.props.close}
+								  windowMin={this.props.minimize}
+								  windowMax={this.props.maximize}
 								  />
 						<div className="content">
 							<Switch>

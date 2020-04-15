@@ -8,6 +8,17 @@
   overflow: hidden;
 }
 
+#main-content {
+  width: 100%;
+  align-items: center;
+}
+
+.folders {
+  width: 10%;
+  margin: 0;
+  padding: 0;
+}
+
 .hint {
 	z-index: 0;
 	color: #004200;

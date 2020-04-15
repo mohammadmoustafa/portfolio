@@ -1,0 +1,10 @@
+.folder {
+  justify-content: center;
+}
+
+.caption {
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  font-size: calc(14px + (16 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
