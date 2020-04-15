@@ -8,9 +8,6 @@ import '../style/master.css'
 import '../style/Folder.css'
 
 class Folder extends React.Component {
-  constructor(props) {
-    super(props);
-  }
 
   render() {
     return (

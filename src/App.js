@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import AppWindow from './components/AppWindow';
 import MenuBar from './components/MenuBar';
 import Folder from './components/Folder';
 
-import { withRouter, Switch, Route, Link } from 'react-router-dom';
+import { withRouter, Switch, Route } from 'react-router-dom';
 import { GoogleReCaptchaProvider } from 'react-google-recaptcha-v3';
 
 import './App.css';
@@ -22,7 +22,7 @@ function App() {
   }
 
   const maximize = () => {
-    if (windowClass == "AppWindow") {
+    if (windowClass === "AppWindow") {
       setWindowClass("AppWindow-max");
 		} else {
 			setWindowClass("AppWindow");
