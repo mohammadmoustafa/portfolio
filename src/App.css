@@ -10,13 +10,13 @@
 
 #main-content {
   width: 100vw;
+  flex: 1;
   align-items: center;
 }
 
 .folders {
-  width: 10%;
-  margin: 0;
-  padding: 0;
+  width: 10vw;
+  left: 90vw;
 }
 
 .hint {

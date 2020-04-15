@@ -11,7 +11,7 @@ class Folder extends React.Component {
 
   render() {
     return (
-      <div className="column">
+      <div className="column folder-box">
         <div className="row folder" onClick={this.props.handleClick}>
           <Link to={this.props.link}><FolderIcon /></Link>
         </div>

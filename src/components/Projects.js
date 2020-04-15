@@ -13,58 +13,74 @@ import { ReactComponent as ReactLogo } from '../media/react.svg';
 import { ReactComponent as Github } from '../media/github.svg';
 import { ReactComponent as MaterialUI } from '../media/material-ui.svg';
 import { ReactComponent as Redis } from '../media/redis.svg';
+import { ReactComponent as Docker } from '../media/docker.svg';
 
 function Project(props) {
 
 	const icons = {
 		javascript: <JavaScript width="36px" height="36px" className="icon"
-														data-tip="JavaScript"
-														data-for={props.title}
-														data-place="bottom"
-														data-effect="solid"
-														data-type="info" />,
+			data-tip="JavaScript"
+			data-for={props.title}
+			data-place="bottom"
+			data-effect="solid"
+			data-type="info"
+			key="javascript" />,
 		java: <Java width="36px" height="36px" className="icon"
-								data-tip="Java"
-								data-for={props.title}
-								data-place="bottom"
-								data-effect="solid"
-								data-type="info" />,
+			data-tip="Java"
+			data-for={props.title}
+			data-place="bottom"
+			data-effect="solid"
+			data-type="info"
+			key="java" />,
 		c: <C width="36px" height="36px" className="icon"
-					data-tip="C"
-					data-for={props.title}
-					data-place="bottom"
-					data-effect="solid"
-					data-type="info" />,
+			data-tip="C"
+			data-for={props.title}
+			data-place="bottom"
+			data-effect="solid"
+			data-type="info"
+			key="c" />,
 		python: <Python width="36px" height="36px" className="icon"
-										data-tip="Python"
-										data-for={props.title}
-										data-place="bottom"
-										data-effect="solid"
-										data-type="info" />,
+			data-tip="Python"
+			data-for={props.title}
+			data-place="bottom"
+			data-effect="solid"
+			data-type="info"
+			key="python" />,
 		nodejs: <NodeJS width="36px" height="36px" className="icon"
-										data-tip="NodeJS"
-										data-for={props.title}
-										data-place="bottom"
-										data-effect="solid"
-										data-type="info" />,
+			data-tip="NodeJS"
+			data-for={props.title}
+			data-place="bottom"
+			data-effect="solid"
+			data-type="info"
+			key="nodejs" />,
 		react: <ReactLogo width="36px" height="36px" className="icon"
-											data-tip="React"
-											data-for={props.title}
-											data-place="bottom"
-											data-effect="solid"
-											data-type="info" />,
+			data-tip="React"
+			data-for={props.title}
+			data-place="bottom"
+			data-effect="solid"
+			data-type="info"
+			key="react" />,
 		redis: <Redis width="36px" height="36px" className="icon"
-											data-tip="Redis"
-											data-for={props.title}
-											data-place="bottom"
-											data-effect="solid"
-											data-type="info" />,
+			data-tip="Redis"
+			data-for={props.title}
+			data-place="bottom"
+			data-effect="solid"
+			data-type="info"
+			key="redis" />,
 		materialui: <MaterialUI width="36px" height="36px" className="icon"
-													data-tip="Material UI"
-													data-for={props.title}
-													data-place="bottom"
-													data-effect="solid"
-													data-type="info" />,
+			data-tip="Material UI"
+			data-for={props.title}
+			data-place="bottom"
+			data-effect="solid"
+			data-type="info"
+			key="materialui" />,
+		docker: <Docker width="36px" height="36px" className="icon"
+			data-tip="Docker"
+			data-for={props.title}
+			data-place="bottom"
+			data-effect="solid"
+			data-type="info"
+			key="docker" />,
 	}
 
 	return (
@@ -103,7 +119,7 @@ class Projects extends React.Component {
 				{ this.state.visible &&
 				<React.Fragment>
 					<div className="Projects">
-						<Project  title="TrendMap" stack={['javascript', 'react', 'nodejs', 'materialui', 'redis']} image={process.env.PUBLIC_URL + '/trendmap.png'}>
+						<Project  title="TrendMap" stack={['javascript', 'react', 'nodejs', 'materialui', 'redis', 'docker']} image={process.env.PUBLIC_URL + '/trendmap.png'}>
 							<div className="text">
 								TrendMap is a single-page web application developed for my web programming course during the COVID-19 pandemic. 
 								It is an interactive map that allows users to see the top news stories and Reddit posts by country. 
@@ -111,6 +127,11 @@ class Projects extends React.Component {
 								The application uses <span className="highlight">React</span>, <span className="highlight">Material UI</span>, and <span className="highlight">LeafletJS</span> for the front end, and connects to the backend using <span className="highlight">SocketIO</span>. 
 								The backend is written in <span className="highlight">NodeJS</span> and uses <span className="highlight">Redis</span> for caching data, which is scraped using the <span className="highlight">News</span> and <span className="highlight">Reddit</span> APIs. 
 								The data is updated hourly, so users are always seeing the most recent stories.
+							</div>
+						</Project>
+						<Project  title="mohammadmoustafa.tech" stack={['react']} image={process.env.PUBLIC_URL + '/mohammadmoustafatech.png'}>
+							<div className="text">
+								
 							</div>
 						</Project>
 					</div>

@@ -14,7 +14,7 @@ function App() {
   const [windowVisible, setWindowVisible] = useState(true);
 
   const minimize = () => {
-    setWindowClass("AppWindow-min");
+    setWindowClass("AppWindow AppWindow-min");
   }
 
   const close = () => {
@@ -31,6 +31,7 @@ function App() {
 
   const open = () => {
     setWindowVisible(true);
+    setWindowClass("AppWindow");
   }
 
   return (
@@ -38,18 +39,20 @@ function App() {
       reCaptchaKey="6LdT-OcUAAAAAB0Cxgd6N8F0XUEN6maMfP3zpQJz">
       <div className="App">
         <MenuBar />
-        <div className="row" style={{ flex: '1'}}>
+        <div className="column" style={{ flex: '1', flexWrap: 'nowrap'}}>
           <div className="column" id="main-content">
             <Switch>
               <Route exact path="/"></Route>
-              <Route><AppWindow class={windowClass}
+              <Route>
+                <AppWindow class={windowClass}
                                 visible={windowVisible}
                                 minimize={minimize}
                                 maximize={maximize}
-                                close={close}/></Route>
+                                close={close}/>
+                </Route>
             </Switch>
           </div>
-          <div className="column folders">
+          <div className="column folders" style={{ position: "absolute" }}>
             <Folder link="/education" caption="Education" handleClick={open}/>
             <Folder link="/experience" caption="Experience" handleClick={open}/>
             <Folder link="/projects" caption="Projects" handleClick={open}/>

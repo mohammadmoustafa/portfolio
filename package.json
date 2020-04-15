@@ -6,7 +6,6 @@
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.27",
     "@fortawesome/free-brands-svg-icons": "^5.12.1",
-    "@fortawesome/free-regular-svg-icons": "^5.12.1",
     "@fortawesome/free-solid-svg-icons": "^5.12.1",
     "@fortawesome/react-fontawesome": "^0.1.9",
     "@testing-library/jest-dom": "^4.2.4",
@@ -15,11 +14,9 @@
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-google-recaptcha-v3": "^1.4.1",
-    "react-recaptcha-v3": "^1.1.0",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.0",
-    "react-tooltip": "^4.1.2",
-    "typeface-roboto": "0.0.75"
+    "react-tooltip": "^4.1.2"
   },
   "scripts": {
     "start": "react-scripts start",

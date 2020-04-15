@@ -2,6 +2,10 @@
   justify-content: center;
 }
 
+.folder-box {
+  padding: 5%;
+}
+
 .caption {
   justify-content: center;
   width: 100%;
