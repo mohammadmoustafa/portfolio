@@ -12,7 +12,7 @@
 	flex-flow: column;
 	margin-top: 3%;
 	z-index: 1;
-	transition: height 1s, width 1s, transform 1s;
+	transition: height 500ms, width 500ms, transform 500ms;
 }
 
 .AppWindow-min {
@@ -33,7 +33,7 @@
 	display:flex;
 	flex-flow: column;
 	z-index: 1;
-	transition: height 1s, width 1s;
+	transition: height 500ms, width 500ms;
 }
 
 .AppWindow .content {
