@@ -1,17 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.e1622bdb.chunk.css",
-    "main.js": "/static/js/main.7efd63c8.chunk.js",
-    "main.js.map": "/static/js/main.7efd63c8.chunk.js.map",
+    "main.js": "/static/js/main.9d84458a.chunk.js",
+    "main.js.map": "/static/js/main.9d84458a.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.09107b3b.js",
     "runtime-main.js.map": "/static/js/runtime-main.09107b3b.js.map",
-    "static/js/2.67b08c1b.chunk.js": "/static/js/2.67b08c1b.chunk.js",
-    "static/js/2.67b08c1b.chunk.js.map": "/static/js/2.67b08c1b.chunk.js.map",
+    "static/js/2.0ccdd877.chunk.js": "/static/js/2.0ccdd877.chunk.js",
+    "static/js/2.0ccdd877.chunk.js.map": "/static/js/2.0ccdd877.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.c08c73bb1de14d8f8ebf31eb98199a42.js": "/precache-manifest.c08c73bb1de14d8f8ebf31eb98199a42.js",
+    "precache-manifest.66f6858c4c26741992f8acf7d507d2c3.js": "/precache-manifest.66f6858c4c26741992f8acf7d507d2c3.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.e1622bdb.chunk.css.map": "/static/css/main.e1622bdb.chunk.css.map",
-    "static/js/2.67b08c1b.chunk.js.LICENSE.txt": "/static/js/2.67b08c1b.chunk.js.LICENSE.txt",
+    "static/js/2.0ccdd877.chunk.js.LICENSE.txt": "/static/js/2.0ccdd877.chunk.js.LICENSE.txt",
+    "static/media/Mohamed_Moustafa_Resume.pdf": "/static/media/Mohamed_Moustafa_Resume.570fddde.pdf",
+    "static/media/Mohamed_Moustafa_Resume.docx": "/static/media/Mohamed_Moustafa_Resume.e29411d2.docx",
     "static/media/clang.c61a5c47.svg": "/static/media/clang.c61a5c47.svg",
     "static/media/docker.aac116a2.svg": "/static/media/docker.aac116a2.svg",
     "static/media/folder.792777d3.svg": "/static/media/folder.792777d3.svg",
@@ -24,14 +26,16 @@
     "static/media/linkedin.d849bc25.svg": "/static/media/linkedin.d849bc25.svg",
     "static/media/material-ui.1dc9c8cf.svg": "/static/media/material-ui.1dc9c8cf.svg",
     "static/media/nodejs.705b987e.svg": "/static/media/nodejs.705b987e.svg",
+    "static/media/pdf.a66648d6.svg": "/static/media/pdf.a66648d6.svg",
     "static/media/python.01766e9c.svg": "/static/media/python.01766e9c.svg",
     "static/media/react.ae86ce92.svg": "/static/media/react.ae86ce92.svg",
-    "static/media/redis.841d4ad6.svg": "/static/media/redis.841d4ad6.svg"
+    "static/media/redis.841d4ad6.svg": "/static/media/redis.841d4ad6.svg",
+    "static/media/word.e15f4e87.svg": "/static/media/word.e15f4e87.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.09107b3b.js",
-    "static/js/2.67b08c1b.chunk.js",
+    "static/js/2.0ccdd877.chunk.js",
     "static/css/main.e1622bdb.chunk.css",
-    "static/js/main.7efd63c8.chunk.js"
+    "static/js/main.9d84458a.chunk.js"
   ]
 }
