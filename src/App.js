@@ -2,11 +2,15 @@ import React, { useState } from 'react';
 import AppWindow from './components/AppWindow';
 import MenuBar from './components/MenuBar';
 import Folder from './components/Folder';
+import File from './components/File';
 
 import { withRouter, Switch, Route } from 'react-router-dom';
 import { GoogleReCaptchaProvider } from 'react-google-recaptcha-v3';
 
 import './App.css';
+
+import Pdf from './Mohamed_Moustafa_Resume.pdf';
+import Docx from './Mohamed_Moustafa_Resume.docx';
 
 function App() {
 
@@ -57,6 +61,8 @@ function App() {
             <Folder link="/experience" caption="Experience" handleClick={open}/>
             <Folder link="/projects" caption="Projects" handleClick={open}/>
             <Folder link="/contact" caption="Contact Info" handleClick={open}/>
+            <File link={Pdf} caption="Resume.pdf" icon="pdf"/>
+            <File link={Docx} caption="Resume.docx" icon="docx"/>
           </div>
         </div>
       </div>
