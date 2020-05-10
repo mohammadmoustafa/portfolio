@@ -14,6 +14,9 @@ import { ReactComponent as Github } from '../media/github.svg';
 import { ReactComponent as MaterialUI } from '../media/material-ui.svg';
 import { ReactComponent as Redis } from '../media/redis.svg';
 import { ReactComponent as Docker } from '../media/docker.svg';
+import { ReactComponent as Electron } from '../media/electron.svg';
+import { ReactComponent as TypeScript } from '../media/typescript.svg';
+import { ReactComponent as Webpack } from '../media/webpack.svg';
 
 function Project(props) {
 
@@ -81,6 +84,27 @@ function Project(props) {
 			data-effect="solid"
 			data-type="info"
 			key="docker" />,
+		electron: <Electron width="36px" height="36px" className="icon"
+			data-tip="Electron"
+			data-for={props.title}
+			data-place="bottom"
+			data-effect="solid"
+			data-type="info"
+			key="electron" />,
+		typescript: <TypeScript width="36px" height="36px" className="icon"
+			data-tip="TypeScript"
+			data-for={props.title}
+			data-place="bottom"
+			data-effect="solid"
+			data-type="info"
+			key="typescript" />,
+		webpack: <Webpack width="36px" height="36px" className="icon"
+			data-tip="Webpack"
+			data-for={props.title}
+			data-place="bottom"
+			data-effect="solid"
+			data-type="info"
+			key="webpack" />,
 	}
 
 	return (
@@ -119,6 +143,16 @@ class Projects extends React.Component {
 				{ this.state.visible &&
 				<React.Fragment>
 					<div className="Projects">
+						<Project title="electron-recipe" stack={['javascript', 'typescript', 'react', 'electron', 'webpack']}
+							image={process.env.PUBLIC_URL + "/electron-recipe.png"} url="https://github.com/mohammadmoustafa/electron-recipe">
+								<div className="text">
+									Currently developing an Electron app meant to make it easier to store and divide/multiply recipes for cooking.
+									I decided to develop this app because I wanted a low effort way to divide the recipes that I already had stored.
+									The frontend is built using <span className="highlight">React</span> and <span className="highlight">Shards React</span>
+									and is served to <span className="highlight">Electron</span> via <span className="highlight">Webpack</span>, with
+									<span className="highlight">PouchDB</span> being used to store data locally.
+								</div>
+						</Project>
 						<Project  title="TrendMap" stack={['javascript', 'react', 'nodejs', 'materialui', 'redis', 'docker']} image={process.env.PUBLIC_URL + '/trendmap.png'}>
 							<div className="text">
 								TrendMap is a single-page web application developed for my web programming course during the COVID-19 pandemic. 
